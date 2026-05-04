@@ -28,3 +28,10 @@ jobs:
 
       - name: Build project
         run: npm run build
+
+      - name: Build project
+        run: npm run build
+
+      - name: Simulate deploy
+        if: github.ref == 'refs/heads/main'
+        run: echo "Deploying to production..."
